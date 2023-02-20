@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    background-color: rgb(35, 35, 35);
+    color: rgb(209, 206, 206);
+    text-transform: capitalize;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+}
+.header ul li {
+    display: inline;
+    padding: 10px 10px;
+    transition: all ease 1s;
+}
+.header li a {
+    text-decoration: none;
+    color: rgb(173, 169, 169);
+    transition: all ease 1s;
+}
+.header ul {
+    float: left;
+    padding-left: 0px;
+}
+.header span {
+    float: right;
+    margin-top: 14px;
+    margin-right: 20px;
+    transition: all ease 1s;
+}
+.header li:hover{
+    background-color: black;
+}
+.header li a:hover {
+    color: white;
+}
+.header span:hover {
+    background-color: black;
+    color: white;
+    
+}
+.left ul {
+    margin-top: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+.left {
+    width: 20%;
+    height: 1600px;
+    background-color: rgb(184, 182, 182);
+    text-align: center;
+    float: left;
+}
+.left li a {
+    list-style-type: none;
+}
+.left li {
+    padding-top: 10px;
+    
+}
+.content {
+    width: 60%;
+    height: 1600px;
+    float: left;
+    background-color: white;
+}
+.right {
+    width: 20%;
+    height: 1600px;
+    float: right;
+    text-align: center;
+    background-color: rgb(205, 201, 201);
+}
+.ads1 , .ads2 {
+    display: block;
+    width: 80%;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.main {
+    height: 1600px;
+    width: 100%;
+}
+.footer {
+    background-color: rgb(56, 54, 54);
+    text-align: center;
+    color: white;
+    height: 50px;
+}
+.footer p {
+    margin-top: 0px;
+    padding-top: 10px;
+}
+.content > h1 , h2 , p {
+    padding-left: 10px;
+}
+@media only screen and (max-width:578px) {
+    .left {
+        display: none;
+    }
+    .right {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+}
